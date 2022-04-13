@@ -14,8 +14,7 @@ export default class ArcherUnit extends Unit {
 		if (this.creep) archers.push(this)
 	}
 
-	snipe = () => {
+	act = () => {
 		this.attackNearest('rangedAttack', this.target)
 	}
 }
-

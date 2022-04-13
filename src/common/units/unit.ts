@@ -1,8 +1,7 @@
-import { error } from "console"
-import { BodyPartConstant, ERR_NOT_IN_RANGE } from "game/constants"
+import { BodyPartConstant } from "game/constants"
 import { Creep, StructureSpawn } from "game/prototypes"
-import { getObjectsByPrototype, findClosestByPath } from "game/utils"
-import { actOrApproach, getEnemies, getEnemySpawns } from "./util"
+import { getObjectsByPrototype } from "game/utils"
+import { actOrApproach, getEnemies, getEnemySpawns } from 'common/util'
 
 export default class Unit {
 	creep: Creep | undefined

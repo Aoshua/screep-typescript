@@ -4,6 +4,7 @@ import Unit from "./unit"
 
 export const warriors: WarriorUnit[] = []
 
+/** Cost: 260 */
 export default class WarriorUnit extends Unit {
 	target: string
 
@@ -14,7 +15,7 @@ export default class WarriorUnit extends Unit {
 		if (this.creep) warriors.push(this)
 	}
 
-	melee = () => {
+	act = () => {
 		this.attackNearest('attack', this.target)
 	}
 }
