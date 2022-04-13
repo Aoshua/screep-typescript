@@ -7,7 +7,7 @@ import { actOrApproach, getEnemies, getEnemySpawns } from "./util"
 export default class Unit {
 	creep: Creep | undefined
 
-	constructor(parts: BodyPartConstant[], role: string, spawn?: StructureSpawn) {
+	constructor(parts: BodyPartConstant[], spawn?: StructureSpawn) {
 		let localSpawn: StructureSpawn
 		if (spawn) localSpawn = spawn
 		else localSpawn = getObjectsByPrototype(StructureSpawn).filter(x => x.my)[0]
